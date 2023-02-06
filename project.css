@@ -2,6 +2,8 @@ html * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+a:link, a:visited, a:hover, a:active {color: white; text-decoration: none;}
+
 h1 {
   opacity:0;
   transition: 1500ms opacity;
