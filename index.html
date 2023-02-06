@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Roll Out with A Trike Called Funk!</title>
+    <meta name="description" content="A Trike Called Funk Overview" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="project.css" />
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+        crossorigin="anonymous"
+    />
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+    </head>
+
+    <body>
+    <main>
+        <!-- <div class="full-screen hidden flex-container-center" id="popup"> -->
+            <!-- <h2 >Rotate screen to landscape mode for the best experience.</h2> -->
+        <!-- </div> -->
+    <header>
+            <img src="images/Header.jpg" class="header-image" />
+            <h1 class="header-text">Join us for a Funk-Filled Ride as we <br> Roll Out, Pop Up, and Get Down!</h1>
+    </header>
+
+    <div class="container-fluid" style="padding: 0; height: 750px; position: relative; overflow: hidden;">      
+        <img class="thumbnail" src="images/Frame-2.jpg" alt="image">
+        <h2 class="subhead-text"> <span class="keywords">Roll Out:</span> <br> Our portable party can go wherever you go</h2> 
+    </div>
+
+        <section id="scrolly">
+        <article>
+            <div class="step" data-step="One">
+            <p>
+                Parks and Gardens
+            </p>
+            </div>
+            <div class="step" data-step="Two">
+            <p>
+                Main Streets & Parades
+            </p>
+            </div>
+            <div class="step" data-step="Three">
+            <p>
+                Beaches & Islands
+            </p>
+            </div>
+            <div class="step" data-step="Four">
+            <p>
+                Wedding & Galas
+            </p>
+            </div>
+            <div class="step" data-step="Five">
+                <p style="font-size: 1.5rem;">
+                    Since our inception in 2020, <br> A Trike Called Funk has activated over a <strong>100 different</strong> events across the greater Boston area, partnering with community organizations like <br> the City of Boston Mayor's office, Suffolk University, and the Somerville Bike Kitchen.
+                </p>
+                </div>
+        </article>
+        <div class="sticky-thing">
+            <div id=mainImage class="0"></div>
+        </div>
+        </section>
+    <div class="container-fluid" style="padding: 0; height: 750px; position: relative; overflow: hidden;">      
+        <img class="thumbnail" src="images/Frame-8(3).jpg" alt="image">
+        <h2 class="subhead-text"> <span class="keywords">Pop Up:</span> <br> A.a.Ron Myers and Ed Word Galan are the <br> dynamic duo behind A Trike Called Funk</h2> 
+    </div>
+    <footer style="background-image: url(images/bg-2.jpg); background-size: contain;">
+        <div class="container" style="padding-top: 5rem;">
+            <div class="row">
+                <div class="col">
+                    <p class="footerText">
+                    A.a.Ron and Ed Word, along with collaborating artists, 
+                    celebrate the diversity of pan-American dance styles throughout Boston communities, 
+                    from Popping and Locking, to Salsa, Bachata, and Capoeira.
+                    </p>
+                </div>
+                <div class="col">
+                    <video controls width="900" height="auto" src="images/Video-1.mp4"></video>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="padding-top: 10rem; padding-bottom: 15rem;">
+            <div class="row">
+                <div class="col">
+                    <video controls width="900" height="auto" src="images/Video-2.mp4"></video>
+                </div>
+                <div class="col"> 
+                    <p class="footerText">
+                        Our trike is a one-of-a-kind front-loading cargo tricycle converted into a mobile marketing vehicle and 
+                        performance platform that's equipped with its own portable dance floor, power source, and DJ set-up.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" style="padding: 0; height: 750px; position: relative; overflow: hidden;">      
+            <img class="thumbnail" src="images/Frame-9.jpg" alt="image">
+            <h2 class="subhead-text"> <span class="keywords">Get Down:</span> <br> If you're interested in partnering with A Trike Called Funk <br> for your next event, connect with us below!</h2>
+            <button type="button" class="btn btn-danger btn-lg" id="social"><a href="https://www.atrikecalledfunk.com/book"></a>Contact</button>
+        </div> 
+        <div style="background-color: rgb(30, 30, 30);">
+          <div class="container" style="padding-top: 5rem;">
+            <div class="row">
+                <div class="col-6">
+                    <img src="images/A-trike-logo-black-white.png" style="height: 10rem"/>
+                </div>
+                <div class="col-6">
+                    <p id="credit">Created by Elijah Nicholson-Messmer in collaboration with Northeastern University and A Trike Called Funk.</p>
+                </div>
+            </div>
+        <img>
+        </div>"
+    </footer>
+    </main>
+    </body>
+    <script>
+var main = document.querySelector("main");
+var scrolly = main.querySelector("#scrolly");
+var sticky = scrolly.querySelector(".sticky-thing");
+var article = scrolly.querySelector("article");
+var steps = article.querySelectorAll(".step");
+    
+
+// initialize the scrollama
+var scroller = scrollama();
+
+// scrollama event handlers
+function handleStepEnter(response) {
+// response = { element, direction, index }
+var el = response.element;
+
+// remove is-active from all steps
+// then add is-active to this step
+steps.forEach((step) => step.classList.remove("is-active"));
+el.classList.add("is-active");
+
+// update graphic based on step
+document.getElementById("mainImage").className = `${el.dataset.step}`;
+}
+
+function init() {
+scroller
+    .setup({
+    step: "#scrolly article .step",
+    offset: 0.66,
+    debug: false,
+    })
+    .onStepEnter(handleStepEnter);
+
+// setup resize event
+window.addEventListener("resize", scroller.resize);
+}
+
+// kick things off
+init();
+
+function pageLoaded() {
+document.querySelector("h1").style.opacity = 1;
+}
+window.onload = pageLoaded;
+
+var image = document.getElementsByClassName('thumbnail');
+new simpleParallax(image, {
+    orientation: 'right'
+});
+    </script>
+</html>
+        
