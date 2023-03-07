@@ -41,7 +41,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(https://cdn.glitch.global/1e754d00-c672-43c9-81ed-6453d6359044/bg-2.jpg);
+  background-image: url(images/bg-2.jpg);
   background-size: contain; 
   background-position: center center;
   padding: 1rem;
@@ -156,7 +156,7 @@ article {
 }
 
 .One {
-  background-image: url(https://cdn.glitch.global/1e754d00-c672-43c9-81ed-6453d6359044/Frame-3.jpg);
+  background-image: url(images/Frame-3.jpg);
   background-color: rgba(0, 0, 0, 0);
   width: 100%; 
   height: 100%; 
@@ -166,7 +166,7 @@ article {
   }
 
 .Two {
-  background-image: url(https://cdn.glitch.global/1e754d00-c672-43c9-81ed-6453d6359044/Frame-4.jpg);
+  background-image: url(images/Frame-4.jpg);
   background-color: rgba(0, 0, 0, 0);
   width: 100%; 
   height: 100%; 
@@ -176,7 +176,7 @@ article {
 }
 
 .Three {
-  background-image: url(https://cdn.glitch.global/1e754d00-c672-43c9-81ed-6453d6359044/Frame-5.jpg);
+  background-image: url(images/Frame-5.jpg);
   background-color: rgba(0, 0, 0, 0);
   width: 100%; 
   height: 100%; 
@@ -186,7 +186,7 @@ article {
 }
 
 .Four {
-  background-image: url(https://cdn.glitch.global/1e754d00-c672-43c9-81ed-6453d6359044/Frame-6.jpg);
+  background-image: url(images/Frame-6.jpg);
   background-color: rgba(0, 0, 0, 0);
   width: 100%; 
   height: 100%; 
@@ -196,7 +196,7 @@ article {
 }
 
 .Five {
-  background-image: url(https://cdn.glitch.global/1e754d00-c672-43c9-81ed-6453d6359044/Frame-7.png);
+  background-image: url(images/Frame-7.png);
   background-color: rgba(0, 0, 0, 0);
   width: 100%; 
   height: 100%; 
