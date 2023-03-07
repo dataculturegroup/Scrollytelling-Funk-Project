@@ -7,14 +7,41 @@ a:link, a:visited, a:hover, a:active {color: white; text-decoration: none;}
 h1 {
   opacity:0;
   transition: 1500ms opacity;
-  }
+  font-family: "Lexend", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header h1 {
+  color: #f3f3f3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 7vh;
+  font-weight: bold;
+  background-color: #f41230bd; 
+  width: 85%;
+  padding: 5px;
+}
+
+h2 {
+  font-family: "Lexend", Verdana, Geneva, Tahoma, sans-serif;
+  color: #f3f3f3;
+  font-size:xx-large;
+  font-weight: bold;
+  position: relative;
+  text-align: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40rem, -55rem);
+}
 
 #scrolly {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(https://cdn.glitch.global/1e754d00-c672-43c9-81ed-6453d6359044/bg-2.jpg?v=1675657351690);
+  background-image: url(https://cdn.glitch.global/1e754d00-c672-43c9-81ed-6453d6359044/bg-2.jpg);
   background-size: contain; 
   background-position: center center;
   padding: 1rem;
@@ -76,39 +103,11 @@ article {
   text-align: center;
   padding: 1rem;
   font-size: 3rem;
+  font-family: "Lexend", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header-image {
   width: 100%;
-}
-
-.header-text {
-  color: #f3f3f3;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 7vh;
-  font-weight: bold;
-  font-style: italic; 
-  background-color: #f41230bd; 
-  width: 85%;
-  padding: 5px;
-}
-
-.subhead-text {
-  color: #f3f3f3;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size:xx-large;
-  font-weight: bold;
-  font-style: italic; 
-  position: relative;
-  text-align: left;
-  top: 50%;
-  left: 50%;
-  transform: translate(-40rem, -55rem);
 }
 
 .keywords {
@@ -157,7 +156,7 @@ article {
 }
 
 .One {
-  background-image: url(https://cdn.glitch.global/1e754d00-c672-43c9-81ed-6453d6359044/Frame-3.jpg?v=1675657360574);
+  background-image: url(https://cdn.glitch.global/1e754d00-c672-43c9-81ed-6453d6359044/Frame-3.jpg);
   background-color: rgba(0, 0, 0, 0);
   width: 100%; 
   height: 100%; 
@@ -167,7 +166,7 @@ article {
   }
 
 .Two {
-  background-image: url(https://cdn.glitch.global/1e754d00-c672-43c9-81ed-6453d6359044/Frame-4.jpg?v=1675657367228);
+  background-image: url(https://cdn.glitch.global/1e754d00-c672-43c9-81ed-6453d6359044/Frame-4.jpg);
   background-color: rgba(0, 0, 0, 0);
   width: 100%; 
   height: 100%; 
@@ -177,7 +176,7 @@ article {
 }
 
 .Three {
-  background-image: url(https://cdn.glitch.global/1e754d00-c672-43c9-81ed-6453d6359044/Frame-5.jpg?v=1675657371082);
+  background-image: url(https://cdn.glitch.global/1e754d00-c672-43c9-81ed-6453d6359044/Frame-5.jpg);
   background-color: rgba(0, 0, 0, 0);
   width: 100%; 
   height: 100%; 
@@ -187,7 +186,7 @@ article {
 }
 
 .Four {
-  background-image: url(https://cdn.glitch.global/1e754d00-c672-43c9-81ed-6453d6359044/Frame-6.jpg?v=1675657374733);
+  background-image: url(https://cdn.glitch.global/1e754d00-c672-43c9-81ed-6453d6359044/Frame-6.jpg);
   background-color: rgba(0, 0, 0, 0);
   width: 100%; 
   height: 100%; 
@@ -197,7 +196,7 @@ article {
 }
 
 .Five {
-  background-image: url(https://cdn.glitch.global/1e754d00-c672-43c9-81ed-6453d6359044/Frame-7.png?v=1675657378452);
+  background-image: url(https://cdn.glitch.global/1e754d00-c672-43c9-81ed-6453d6359044/Frame-7.png);
   background-color: rgba(0, 0, 0, 0);
   width: 100%; 
   height: 100%; 
